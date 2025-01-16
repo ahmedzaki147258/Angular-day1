@@ -191,3 +191,139 @@ a button {
 a button:hover {
   background-color: #004080;
 }
+
+@media screen and (max-width: 768px) {
+  /* Hero Section */
+  .home {
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    background-size: cover;
+  }
+
+  .content {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .content h2 {
+    font-size: 2em;
+  }
+
+  .content h4 {
+    font-size: 1.5em;
+  }
+
+  .content p {
+    font-size: 0.9em;
+    padding: 10px 0 30px 0;
+  }
+
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .btn-group a {
+    width: 80%;
+    text-align: center;
+    margin: 0 !important;
+    padding: 12px 20px;
+  }
+
+  /* About Section */
+  .about-section {
+    padding: 30px 15px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-container {
+    max-width: 250px;
+    margin: 10px auto;
+  }
+
+  .about-content {
+    margin: 10px;
+    padding: 0 10px;
+  }
+
+  .about-content h2 {
+    font-size: 2rem;
+  }
+
+  .about-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .about-content h4 {
+    font-size: 1.1rem;
+  }
+
+  .about-text {
+    text-indent: 0;
+    text-align: left;
+    font-size: 0.9em;
+  }
+
+  .about-content ul {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .about-content ul li {
+    font-size: 0.9em;
+    margin-bottom: 8px;
+  }
+
+  .about-content button {
+    width: 100%;
+    max-width: 200px;
+    margin-top: 20px;
+  }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 480px) {
+  .home {
+    padding: 15px;
+  }
+
+  .content h2 {
+    font-size: 1.8em;
+  }
+
+  .content h4 {
+    font-size: 1.3em;
+  }
+
+  .btn-group a {
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+  .image-container {
+    max-width: 200px;
+  }
+
+  .about-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-content p {
+    font-size: 0.85em;
+  }
+}
+
+/* Ensure smooth text rendering */
+@media screen and (max-width: 768px) {
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
