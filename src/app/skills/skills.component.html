@@ -1,0 +1,29 @@
+<section class="skills-section">
+  <div class="max-width">
+    <h2 class="title">My Skills</h2>
+
+    <div class="experience-section">
+      <h3>Experience</h3>
+      <div class="experience-item">
+        <i class="fas fa-briefcase"></i>
+        <div class="experience-details">
+          <h4>Backend Developer</h4>
+          <p>
+            <a href="https://handle-t.com/" target="_blank">HandleT</a>
+            <span class="date">Oct 2023 - Oct 2024</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-container">
+      <h3>Development Skills</h3>
+      <div class="skills-grid">
+        <div *ngFor="let skill of skills" class="skill-item">
+          <i [class]="skill.icon"></i>
+          <span>{{ skill.name }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

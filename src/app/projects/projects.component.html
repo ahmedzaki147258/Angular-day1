@@ -1,0 +1,48 @@
+<section class="projects-section">
+  <div class="max-width">
+    <h1 class="title">My Projects</h1>
+    <h2 class="subtitle">What I did ?</h2>
+
+    <div class="category-section">
+      <h3 class="category-title">Real Projects</h3>
+      <div class="projects-grid">
+        <div *ngFor="let project of realProjects" class="project-card">
+          <div class="project-image">
+            <img [src]="project.image" [alt]="project.name">
+          </div>
+          <div class="project-content">
+            <h4 class="project-title">
+              <a [href]="project.link" target="_blank">{{ project.name }}</a>
+            </h4>
+            <div class="technologies">
+              <span *ngFor="let tech of project.technologies" class="tech-tag">
+                {{ tech }}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="category-section">
+      <h3 class="category-title">Personal Projects</h3>
+      <div class="projects-grid">
+        <div *ngFor="let project of myProjects" class="project-card">
+          <div class="project-image">
+            <img [src]="project.image" [alt]="project.name">
+          </div>
+          <div class="project-content">
+            <h4 class="project-title">
+              <a [href]="project.link" target="_blank">{{ project.name }}</a>
+            </h4>
+            <div class="technologies">
+              <span *ngFor="let tech of project.technologies" class="tech-tag">
+                {{ tech }}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
